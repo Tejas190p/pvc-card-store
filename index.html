@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b10">
+  <meta name="description" content="A custom Free Fire MAX inspired PVC player card. One card, ₹299.">
+  <title>Drop Card — Custom PVC Player Card</title>
+  <style>
+    :root{color-scheme:dark;--bg:#090b10;--panel:#11151d;--line:rgba(255,255,255,.11);--muted:#a3a8b5;--white:#f7f8fb;--orange:#ff7136;--blue:#32bfff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Arial, sans-serif;min-height:100vh}button{font:inherit;color:inherit;cursor:pointer}.shell{width:min(1160px,calc(100% - 48px));margin:auto}
+    .topline{height:4px;background:linear-gradient(90deg,#ff5b23,#ffb02e 48%,#19a9ff)}header{border-bottom:1px solid var(--line);background:rgba(9,11,16,.88);backdrop-filter:blur(14px);position:sticky;top:0;z-index:5}.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font-family:Impact, "Arial Narrow", sans-serif;font-weight:900;font-size:24px;letter-spacing:.08em;text-transform:uppercase;display:flex;align-items:center;gap:10px}.brand-mark{width:30px;height:30px;display:grid;place-items:center;border:1px solid rgba(255,113,54,.65);transform:rotate(45deg);color:#ff8a3c;font-size:13px}.brand-mark span{transform:rotate(-45deg)}.brand small{font-size:10px;letter-spacing:.2em;color:#9499a6;display:block;margin-top:-3px}.cart-button{border:1px solid var(--line);background:#11151d;padding:10px 15px;border-radius:999px;display:flex;align-items:center;gap:9px;font-size:13px;font-weight:700;transition:.2s}.cart-button:hover{border-color:rgba(255,255,255,.34);transform:translateY(-1px)}.cart-icon{font-size:16px}.cart-count{min-width:20px;height:20px;border-radius:50%;background:var(--orange);color:#1a0c06;display:grid;place-items:center;font-size:11px;font-weight:800}
+    main{padding:64px 0 80px}.eyebrow{color:#ff9b62;letter-spacing:.2em;text-transform:uppercase;font-size:11px;font-weight:700;display:flex;align-items:center;gap:9px}.eyebrow:before{content:'';width:22px;height:1px;background:var(--orange)}.product{display:grid;grid-template-columns:1.12fr .88fr;gap:70px;align-items:center;margin-top:23px}.gallery{min-width:0}.main-photo{position:relative;aspect-ratio:1.27/1;border-radius:22px;overflow:hidden;background:#121721;border:1px solid var(--line);box-shadow:0 28px 80px rgba(0,0,0,.38)}.main-photo:after{content:'';pointer-events:none;position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,113,54,.12),transparent 35%,transparent 64%,rgba(50,191,255,.1))}.main-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:opacity .2s}.photo-label{position:absolute;z-index:1;left:16px;bottom:16px;padding:8px 12px;border:1px solid rgba(255,255,255,.2);background:rgba(8,10,14,.72);backdrop-filter:blur(10px);border-radius:999px;text-transform:uppercase;font-size:10px;letter-spacing:.15em;font-weight:700}.thumbs{display:flex;gap:12px;margin-top:14px}.thumb{width:114px;height:76px;padding:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#11151d;opacity:.58;transition:.2s}.thumb img{width:100%;height:100%;object-fit:cover;display:block}.thumb:hover,.thumb.active{opacity:1;border-color:#ff8a3c;box-shadow:0 0 0 1px rgba(255,138,60,.24)}
+    .details{padding:8px 0}.edition{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(50,191,255,.28);background:rgba(50,191,255,.07);color:#86d9ff;border-radius:999px;padding:8px 11px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:700}.edition i{width:6px;height:6px;border-radius:50%;background:#48c6ff;box-shadow:0 0 10px #48c6ff}.title{font-family:Impact, "Arial Narrow", sans-serif;font-size:clamp(52px,7vw,82px);line-height:.91;letter-spacing:-.02em;text-transform:uppercase;margin:22px 0 17px;font-weight:900}.title span{display:block;color:#ff8a3c}.subtitle{font-size:15px;line-height:1.8;color:#aeb3c0;max-width:430px;margin:0}.price-row{display:flex;align-items:baseline;gap:11px;margin:28px 0 22px}.price{font-family:Impact, "Arial Narrow", sans-serif;font-size:42px;font-weight:800;letter-spacing:.01em}.price-note{font-size:12px;color:#8d93a1}.rule{height:1px;background:var(--line);margin:22px 0}.features{display:flex;gap:22px;flex-wrap:wrap;color:#c6cad3;font-size:12px}.feature{display:flex;align-items:center;gap:8px}.check{width:17px;height:17px;border-radius:50%;display:grid;place-items:center;color:#7fe0b3;background:rgba(74,211,145,.12);font-size:11px}.actions{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:28px}.action{border-radius:11px;padding:15px 14px;font-weight:800;font-size:13px;transition:transform .18s,box-shadow .18s,border-color .18s}.action:hover{transform:translateY(-2px)}.primary{background:linear-gradient(110deg,#ff7a36,#ffad3c);color:#1a0e07;border:0;box-shadow:0 8px 24px rgba(255,113,54,.16)}.primary:hover{box-shadow:0 10px 30px rgba(255,113,54,.3)}.secondary{background:#141821;border:1px solid rgba(255,255,255,.16)}.secondary:hover{border-color:rgba(255,255,255,.38)}.delivery{font-size:11px;color:#858b99;text-align:center;margin-top:13px}.toast{position:fixed;bottom:24px;left:50%;z-index:9;transform:translate(-50%,18px);padding:13px 18px;border:1px solid rgba(255,255,255,.14);border-radius:12px;background:#171c26;box-shadow:0 12px 35px rgba(0,0,0,.4);font-size:13px;opacity:0;pointer-events:none;transition:.24s;white-space:nowrap}.toast.show{opacity:1;transform:translate(-50%,0)}footer{border-top:1px solid var(--line);padding:22px 0;color:#737987;font-size:11px}.footer-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.footer-brand{color:#c0c4ce;letter-spacing:.12em;font-weight:700;text-transform:uppercase}
+    [hidden]{display:none!important}.listing{display:grid;grid-template-columns:minmax(0,520px);justify-content:center;margin:25px auto 0}.listing-card{display:grid;grid-template-columns:1fr 1fr;overflow:hidden;border:1px solid var(--line);border-radius:18px;background:linear-gradient(135deg,#151a24,#0f1219);box-shadow:0 22px 60px rgba(0,0,0,.3)}.listing-image{min-height:235px;width:100%;height:100%;object-fit:cover;display:block}.listing-info{padding:24px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}.listing-kicker{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#84d8ff;font-weight:700}.listing-title{font-family:Impact,"Arial Narrow",sans-serif;font-size:30px;line-height:1.02;text-transform:uppercase;margin:13px 0 8px}.listing-desc{font-size:12px;line-height:1.6;color:#aeb3c0;margin:0}.listing-price{font-size:22px;font-weight:800;margin:15px 0}.listing-add{width:100%;padding:13px 12px;border-radius:10px;border:0;background:linear-gradient(110deg,#ff7a36,#ffad3c);color:#1a0e07;font-weight:800;font-size:12px;transition:transform .18s,box-shadow .18s}.listing-add:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(255,113,54,.26)}
+    @media(max-width:520px){.listing-card{grid-template-columns:1fr 1fr}.listing-image{min-height:210px}.listing-info{padding:16px}.listing-title{font-size:24px}.listing-desc{font-size:11px}.listing-price{margin:11px 0}}
+    @media(max-width:850px){.product{grid-template-columns:1fr;gap:34px;margin-top:18px}.details{max-width:620px}.main-photo{aspect-ratio:1.38/1}main{padding-top:42px}.title{font-size:72px}}
+    @media(max-width:520px){.shell{width:min(100% - 32px,1160px)}.nav{height:66px}.brand{font-size:21px}.cart-button{padding:9px 12px}main{padding:31px 0 54px}.main-photo{aspect-ratio:1.05/1;border-radius:16px}.thumb{height:64px;width:96px}.product{gap:27px}.title{font-size:61px;margin-top:18px}.subtitle{font-size:14px}.price-row{margin:23px 0 17px}.price{font-size:38px}.features{gap:13px 17px}.actions{gap:9px}.action{font-size:12px;padding:14px 8px}.footer-inner{font-size:10px}}
+  </style>
+</head>
+<body>
+  <div class="topline"></div>
+  <header><div class="shell nav">
+    <div class="brand"><div class="brand-mark"><span>✦</span></div><div>Drop Card<small>Custom player cards</small></div></div>
+  </div></header>
+  <main class="shell">
+    <div class="eyebrow">Made for your player profile</div>
+    <section class="product" id="product-detail" aria-label="Custom PVC player card details">
+      <div class="gallery">
+        <div class="main-photo"><img id="mainImage" src="assets/card-front.jpeg" alt="Front of the custom gaming PVC card showing the player profile and character artwork"><div class="photo-label" id="photoLabel">Front design</div></div>
+        <div class="thumbs" aria-label="Card views">
+          <button class="thumb active" data-image="assets/card-front.jpeg" data-alt="Front of the custom gaming PVC card showing the player profile and character artwork" data-label="Front design" aria-label="View front of card"><img src="assets/card-front.jpeg" alt="Front design thumbnail"></button>
+          <button class="thumb" data-image="assets/card-back.jpeg" data-alt="Back of the custom gaming PVC card with player name and UID" data-label="Back design" aria-label="View back of card"><img src="assets/card-back.jpeg" alt="Back design thumbnail"></button>
+        </div>
+      </div>
+      <div class="details">
+        <div class="edition"><i></i> PVC gaming card · 1 piece</div>
+        <h2 class="title">Your game.<span>Your card.</span></h2>
+        <p class="subtitle">Take your player profile off screen. A custom look PVC card featuring your gaming identity, made to show off or keep close.</p>
+        <div class="price-row"><div class="price">₹299</div><div class="price-note">one card · one price</div></div>
+        <div class="rule"></div>
+        <div class="features"><div class="feature"><span class="check">✓</span>Front &amp; back artwork</div><div class="feature"><span class="check">✓</span>Durable PVC finish</div></div>
+        <div class="actions"><a class="action primary" style="display:grid;place-items:center;text-decoration:none;grid-column:1/-1" href="https://wa.me/919359964003?text=I%20am%20interested%20to%20buy%20the%20card" target="_blank" rel="noopener noreferrer">Buy now&nbsp; ↗</a></div>
+        <div class="delivery">A custom player card for just ₹299</div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="shell footer-inner"><span class="footer-brand">Drop Card</span><span>Founder: Sahil&nbsp; · &nbsp;CEO: Tejas</span></div></footer>
+  <script>
+    (() => {
+      const image = document.getElementById('mainImage');
+      const label = document.getElementById('photoLabel');
+      const thumbs = [...document.querySelectorAll('.thumb')];
+
+      thumbs.forEach((button) => button.addEventListener('click', () => {
+        image.src = button.dataset.image;
+        image.alt = button.dataset.alt;
+        label.textContent = button.dataset.label;
+        thumbs.forEach((item) => item.classList.toggle('active', item === button));
+      }));
+
+    })();
+  </script>
+</body>
+</html>
+
+
